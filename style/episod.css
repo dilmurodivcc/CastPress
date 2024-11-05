@@ -12,7 +12,7 @@ body {
 }
 .container {
   max-width: 670px;
-  margin: 100px auto 64px;
+  margin: 100px auto 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,10 +51,11 @@ header nav a {
   text-transform: uppercase;
   color: #222 !important;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 header nav a:hover {
-  text-decoration: underline;
-  text-decoration-color: #7247ca;
+  transform: scale(1.15);
+  transition: all 0.3s ease;
 }
 .donate {
   font-family: var(--font-family);
@@ -138,10 +139,12 @@ button img {
 
 #current-time,
 #total-duration {
-  font-size: 14px;
-  color: #333;
-  min-width: 45px;
-  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #555;
 }
 
 #progress-bar {
@@ -297,19 +300,26 @@ button img {
 }
 
 .inputs h3 {
-  margin-bottom: 10px;
-  font-size: 1.5em;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156%;
+  color: #222;
 }
 
 .inputs p {
-  color: #555;
-  margin-bottom: 20px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #979797;
 }
 .inputs label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #333;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156%;
+  color: #555;
 }
 
 .inputs textarea,
@@ -329,7 +339,7 @@ input[type="url"] {
 
 .inputs textarea {
   border-radius: 4px;
-  width: 100%;
+  width: 670px;
   height: 150px;
   resize: none;
   outline: none;
@@ -344,27 +354,206 @@ input[type="url"] {
 
 .inputs .checkbox-container input[type="checkbox"] {
   margin-right: 8px;
+  margin-left: 5px;
+  cursor: pointer;
+  transform: scale(1.5);
 }
 
 .inputs button {
   width: 90px;
-  width: 34px;
-  background-color: #7247ca; /* Purple color */
+  height: 34px;
+  background-color: #7247ca;
   color: #fff;
   font-size: 1em;
   font-weight: bold;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
   cursor: pointer;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #fff;
   transition: background-color 0.3s ease;
+  margin-bottom: 50px;
+}
+.inputs button img {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  margin-top: 1px;
 }
 
 .inputs button:hover {
-  background-color: #4a148c; /* Darker purple on hover */
+  background-color: #4a148c;
 }
 .inputs .save-info {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
   color: #555;
+}
+
+.comments p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 156%;
+  text-align: justify;
+  color: #555;
+}
+.comments h5 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #555;
+}
+.comments b {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #979797;
+}
+.comment {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+  margin: 40px 0;
+}
+.comment:nth-child(3) {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  gap: 20px;
+  margin: 40px 0 0 60px;
+}
+.comments h3 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156%;
+  color: #222;
+  margin-top: 65px;
+  margin-bottom: -10px;
+}
+.comments .border-line {
+  margin-top: 40px;
+}
+.comments span {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #979797;
+  margin-top: -5px;
+}
+.comments .date {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+.input {
+  position: relative;
+  width: 315px;
+  border-radius: 4px;
+  width: 315px;
+  height: 42px;
+  background: #f5f5f7;
+}
+.input input {
+  border-radius: 4px;
+  height: 42px;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: #f5f5f7;
+}
+.subBtn {
+  position: absolute;
+  right: 4px;
+  top: 3px;
+  border-radius: 4px;
+  width: 36px;
+  height: 36px;
+  background-color: #7247ca;
+  display: grid;
+  place-content: center;
+}
+.input input {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  color: #555;
+}
+.signup p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  color: #555;
+}
+.signup h3 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #222;
+}
+.subBtn img {
+  width: 11px;
+  height: 8px;
+}
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .content {
+  display: flex;
+  align-items: start;
+  width: 100%;
+  gap: 298px;
+  margin-top: 65px;
+  justify-content: space-between;
+}
+footer .content .pages {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 30px;
+  flex-direction: column;
+}
+
+footer a {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 179%;
+  color: #555;
+  text-decoration: none;
+}
+footer .last {
+  margin-top: 85px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #222;
+  margin-bottom: 24px;
+}
+footer .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+footer .icons img:nth-child(3) {
+  margin-top: 4px;
 }
