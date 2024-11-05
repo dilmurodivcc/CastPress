@@ -3,3 +3,61 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container{
+  max-width: 670px;
+  margin: 0 auto;
+  font-family: 'Source Serif Pro', serif;
+}
+.img-1{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 110px;
+}
+.main-text{
+  text-align: center;
+  margin-top: 40px;
+}
+.listen-on{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+.lstn-icons{
+  display: flex;
+  justify-content: space-between;
+  width: 136px;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 102px;
+}
+.business{
+ 
+  text-align: center;
+}
+.bsns-p{
+  width: 40px;
+  margin-top: -102px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px 10px;
+  background-color: whitesmoke;
+  color: blueviolet;
+  margin-bottom: 10px;
+}
+.lorem{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 670px;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  
+}
+.play-button{
+  display: flex;
+  justify-content: center;
+  
+  
+}
