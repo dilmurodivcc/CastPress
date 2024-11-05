@@ -181,6 +181,57 @@ header .search {
   width: 11px;
   height: 8px;
 }
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin: 48px 0;
+}
+.time h3 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 123%;
+  color: #222;
+}
+.time h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 119%;
+  color: #222;
+}
+.time a {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 179%;
+  color: #7247ca !important;
+  text-decoration: none;
+}
+.time .date {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #979797;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+.time .card-img {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-wrap: nowrap;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+.time .border-line {
+  margin-top: 20px;
+}
+
 footer {
   display: flex;
   align-items: center;
