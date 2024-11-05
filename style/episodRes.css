@@ -1,0 +1,71 @@
+@media screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  .header-container {
+    max-width: 86vw !important;
+  }
+  header nav {
+    display: none !important;
+    align-items: center;
+    padding: 24px 0 !important;
+  }
+  .container {
+    max-width: 86vw !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-mobile{
+    display: block !important;
+    padding: 24px;
+  }
+  .menu-mobile .logo{
+    max-width: 86vw !important;
+    padding: 0 !important;
+
+  }
+  .menu {
+    display: block !important;
+  }
+  .mobile-h1 {
+    display: block !important   ;
+  }
+  .desktop-h1 {
+    display: none !important;
+  }
+  .audio {
+    width: 86vw !important;
+  }
+  #progress-bar {
+    width: 130px !important;
+  }
+  .listening {
+    width: 288px !important;
+    height: 97px !important;
+  }
+
+  .card-img {
+    flex-direction: column !important;
+  }
+  .inputs textarea,
+  input[type="text"],
+  input[type="email"],
+  input[type="url"] {
+    width: 86vw !important;
+  }
+  footer .content {
+    gap: 32px !important;
+    flex-direction: column !important;
+  }
+.comments .date{
+    display: flex;
+    flex-direction: column;
+    justify-content: start !important;
+    align-items: start !important;
+}
+  .border-line {
+    width: 86vw !important;
+  }
+}

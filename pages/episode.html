@@ -27,6 +27,7 @@
     <header>
       <div class="header-container">
         <p>CastPress.</p>
+        <img class="menu" src="../images/Menu Icon.svg" alt="" />
         <nav class="nav">
           <a
             href="#"
@@ -55,12 +56,49 @@
             <img src="../icons/search.svg" alt="" />
           </button>
         </nav>
+        <div class="menu-mobile">
+          <div class="logo">
+            <p>CastPress.</p>
+            <img class="close" src="../images/xmark-solid.svg" alt="">
+          </div>
+
+          <div class="nav_mobile">
+            <a
+            href="#"
+            id="navbarDarkDropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Episodes
+            <img src="../icons/arrowDown.svg" alt="" />
+          </a>
+          <ul style="margin-left: -20px;"
+            class="dropdown-menu dropdown-menu-white border-white"
+            aria-labelledby="navbarDarkDropdownMenuLink"
+          >
+            <li><a class="dropdown-item" href="../index.html">Season 1</a></li>
+            <li><a class="dropdown-item" href="../index.html">Season 2</a></li>
+            <li><a class="dropdown-item" href="../index.html">Season 3</a></li>
+          </ul>
+          <a href="../index.html">Blog</a>
+          <a href="../index.html">Contact</a>
+          <a class="donate" href="#">
+            <img src="../icons/Icon color.svg" alt="" /> Donate</a
+          >
+          <div style="margin-top: 50px;" class="border-line"></div>
+          </div>
+        </div>
       </div>
     </header>
     <div class="container">
       <section class="audio">
         <img style="display: block" src="../images/Img 01.png" alt="" />
-        <h1>Makemeup Podcast Theme; launch it now!</h1>
+        <h1 class="desktop-h1">Makemeup Podcast Theme; launch it now!</h1>
+        <h1 style="display: none" class="mobile-h1">
+          Makemeup Podcast <br />
+          Theme; launch it now!
+        </h1>
         <h6>Episode 18 | jan 8, 2021 | By VitaThemes</h6>
         <div class="audio-player">
           <audio
@@ -72,7 +110,7 @@
             <img src="../icons/play-solid.svg" alt="Play" />
           </button>
 
-          <span  id="current-time">00:00</span>
+          <span id="current-time">00:00</span>
 
           <input type="range" id="progress-bar" value="0" min="0" max="175" />
 
@@ -273,9 +311,9 @@
         <p class="last">PodcastTheme by VitaThemes | Privacy policy</p>
 
         <div class="icons">
-          <img src="../icons/facebook.svg" alt="">
-          <img src="../icons/github.svg" alt="">
-          <img src="../icons/twitter.svg" alt="">
+          <img src="../icons/facebook.svg" alt="" />
+          <img src="../icons/github.svg" alt="" />
+          <img src="../icons/twitter.svg" alt="" />
         </div>
       </footer>
     </div>
