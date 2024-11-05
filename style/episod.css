@@ -13,6 +13,9 @@ body {
 .container {
   max-width: 670px;
   margin: 100px auto 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .header-container {
   max-width: 1140px;
@@ -109,7 +112,7 @@ header .search {
 .audio .icons {
   display: flex;
   align-items: center;
-  gap: 30px;    
+  gap: 30px;
 }
 .audio-player {
   display: flex;
@@ -162,3 +165,206 @@ button img {
   cursor: pointer;
 }
 
+.text {
+  margin: 96px 0 48px;
+}
+
+.text p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156%;
+  color: #555;
+}
+.text h2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 119%;
+  color: #222;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+.listening {
+  border: 1px solid #eaeaee;
+  width: 670px;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 28px;
+  padding-left: 25px;
+}
+.listening p {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 21px;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: -4px;
+}
+.tags {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+  flex-direction: column;
+}
+.tags .tag {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.tags .tag a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156%;
+  color: #555;
+  text-decoration: none;
+}
+.tags .share {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 20px 0;
+  justify-content: center;
+}
+.tags .share p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 156%;
+  color: #222;
+  margin: 0 !important;
+}
+.border-line {
+  border: 1px solid #eaeaee;
+  width: 670px;
+}
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin: 48px 0;
+}
+.time h3 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 123%;
+  color: #222;
+}
+.time h4 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 119%;
+  color: #222;
+}
+.time a {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 179%;
+  color: #7247ca !important;
+  text-decoration: none;
+}
+.time .date {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #979797;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+.time .card-img {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-wrap: nowrap;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+.time .border-line {
+  margin-top: 20px;
+}
+
+.inputs h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.inputs p {
+  color: #555;
+  margin-bottom: 20px;
+}
+.inputs label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.inputs textarea,
+input[type="text"],
+input[type="email"],
+input[type="url"] {
+  border-radius: 4px;
+  width: 670px;
+  height: 42px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  outline: none;
+  border: none;
+  background: #f5f5f7;
+}
+
+.inputs textarea {
+  border-radius: 4px;
+  width: 100%;
+  height: 150px;
+  resize: none;
+  outline: none;
+  background: #f5f5f7;
+}
+
+.inputs .checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inputs .checkbox-container input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.inputs button {
+  width: 90px;
+  width: 34px;
+  background-color: #7247ca; /* Purple color */
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inputs button:hover {
+  background-color: #4a148c; /* Darker purple on hover */
+}
+.inputs .save-info {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  color: #555;
+}
